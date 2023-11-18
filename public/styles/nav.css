@@ -1,9 +1,28 @@
 nav {
-    background-color: blue;
-    color: white;
-    font-family: "Bungee", sans-serif;
-    font-size: 30px;
-    height: 65px;
-    padding-top:25px;
+    background-color: #4056A1;
+    color: #FFFFFF;
+    height: 120px;
+    width: 100%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+
+}
+
+nav>span{
+  margin-top: 37px;
+  font-family: "Bungee", sans-serif;
+  font-size: 50px;
+}
+
+nav>div{
+  text-align: right;
+}
+
+.arrow{
+  color: red;
+  text-align: center;
 }

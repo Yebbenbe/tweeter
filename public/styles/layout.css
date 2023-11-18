@@ -26,5 +26,17 @@ body {
 
  body {
   font-family: 'Open Sans', sans-serif;
+
  }
 
+ main {
+  width: 90%;
+  margin: 0 auto; /* This centers the main box (which is 90% of the page width) */
+  display: flex;  /* This centers the content inside the main box */
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f1ec;
+  
+ }
+
+ 
