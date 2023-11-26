@@ -3,7 +3,13 @@ section.tweet{
   border: solid 4px #545149;
   background-color: #f3f1ec;
   margin-top: 10px;
+  margin-bottom: 20px;
  }
+
+ section.tweet:hover{
+  box-shadow: 8px 5px 5px #cfd3e9;
+ }
+
 
 /* header contents */
 article.tweet header {
@@ -17,9 +23,16 @@ article.tweet header {
 article.tweet footer{
   display: flex;
   flex-direction: row;
-  padding: 10px 7px 5px 5px;
   justify-content: space-between;
   font-size: 16px;
   border-top: solid 4px #545149;;
 }
 
+.fa-solid {
+  margin: 5px;
+  color:#47569b;
+}
+
+.fa-solid:hover{
+  color: #c7a15b;
+}
