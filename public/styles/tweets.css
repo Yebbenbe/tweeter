@@ -1,4 +1,5 @@
-section.tweet{
+/*main container */
+#tweets-container{
   width: 100%;
   border: solid 4px #545149;
   background-color: #f3f1ec;
@@ -6,26 +7,48 @@ section.tweet{
   margin-bottom: 20px;
  }
 
- section.tweet:hover{
+ #tweets-container:hover{
   box-shadow: 8px 5px 5px #cfd3e9;
  }
 
 
-/* header contents */
+/* header section*/
 article.tweet header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
   font-size: 18px;
+  margin-bottom: 10px; /* space above tweet text */
 }
+
+/* Avatar box in header */
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.avatar {
+  margin-bottom: 5px;
+}
+
+/* handle box in header */
+.handle {
+  font-size: 16px;
+  margin-left: 10px; 
+}
+
+/*footer section*/
 
 article.tweet footer{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 16px;
-  border-top: solid 4px #545149;;
+  margin: 5px;
+  border-top: solid 3px #6f6c62;
+  border-bottom: 5px solid #4e4c44;
 }
 
 .fa-solid {

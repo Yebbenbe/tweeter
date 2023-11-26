@@ -10,6 +10,7 @@
     type="text/css" />
 
   <!-- Fonts-->
+
   <link
     href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@0,300;0,600;1,300;1,600&display=swap"
     rel="stylesheet">
@@ -69,25 +70,29 @@
       </form>
     </section>
 
-    <section class="tweet">
+    <!-- This needs to be updated with new layout-->
+    <section id="tweets-container">
+      <!-- unused, dynamically generated
       <article class="tweet">
         <header>
-            <h2>Someone's Name</h2>
-            <h2>@someonesname</h2>
+          <div class="avatar-container">
+            <img class="avatar" src="${avatars}" alt="https://i.imgur.com/73hZDYK.png">
+            <span class="handle">${name}</span>
+          </div>
+          <h2>${'@' + handle}</h2>
         </header>
-        <div>covfefe</div>
+        <div class="tweet-text">${text}</div>
         <footer>
-          <div>    idk a while back</div>
-          <div>
+          <div class="timestamp">${createdAt}</div>
+          <div class="actions">
             <i class="fa-solid fa-flag"></i>
             <i class="fa-solid fa-repeat"></i>
             <i class="fa-solid fa-heart"></i>
           </div>
         </footer>
-      </article>
+      </article> -->
 
     </section>
-
 
   </main>
 </body>
