@@ -1,10 +1,9 @@
-header {
+header.userheader {
   height: 520px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #998d7a;
-  background-image: url("../images/buried.png");
+  background-color: #f3f1ec;
 }

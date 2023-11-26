@@ -1,0 +1,25 @@
+section.tweet{
+  width: 100%;
+  border: solid 4px #545149;
+  background-color: #f3f1ec;
+  margin-top: 10px;
+ }
+
+/* header contents */
+article.tweet header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  font-size: 18px;
+}
+
+article.tweet footer{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 7px 5px 5px;
+  justify-content: space-between;
+  font-size: 16px;
+  border-top: solid 4px #545149;;
+}
+
