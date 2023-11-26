@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link href="/styles/nav.css" rel="stylesheet" >
     <link href="/styles/header.css" rel="stylesheet" >
+    <link href="/styles/new-tweet.css" rel="stylesheet">
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -47,13 +48,19 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <h1>How many pockets can my hand fit into?</h1>
-      <p> Cinnamon candies are pretty good. I really love them.
-        Also, I really love cats. </p> 
 
-        <h2>My ideal husband</h2>
-        <p> glucose-fructose </p>
-      </p>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form action="/tweets/" method="POST">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div class ="buttoncounter">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      
 
     </main>
   </body>
