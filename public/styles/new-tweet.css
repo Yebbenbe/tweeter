@@ -33,3 +33,16 @@
   font-size: large;
   font-weight: 600;
  }
+
+ .error-container {
+  background-color: #ffcccc;
+  border: 1px solid #ff0000;
+  padding: 10px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.error-message {
+  color: #ff0000; /* text */
+  font-weight: bold;
+}
