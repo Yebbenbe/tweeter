@@ -11,7 +11,7 @@ $(document).ready(function () {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
-  };  
+  };
 
   // Load Tweets
   const loadTweets = function () {
@@ -30,15 +30,15 @@ $(document).ready(function () {
     }
   }
 
-    // Create tweet element
-    const createTweetElement = function (tweetObj) {
-      const { name, avatars, handle } = tweetObj.user;
-      const { text } = tweetObj.content;
-      const createdAt = tweetObj.created_at;
-      // escape user input text
-      const escapedText = escape(text);
-      // generate tweet element
-      let $tweet = $(`
+  // Create tweet element
+  const createTweetElement = function (tweetObj) {
+    const { name, avatars, handle } = tweetObj.user;
+    const { text } = tweetObj.content;
+    const createdAt = tweetObj.created_at;
+    // escape user input text
+    const escapedText = escape(text);
+    // generate tweet element
+    let $tweet = $(`
       <article class="tweet">
         <header>
           <div class="avatar-container">
@@ -58,8 +58,8 @@ $(document).ready(function () {
         </footer>
       </article>
       `);
-      return $tweet;
-    }
+    return $tweet;
+  }
 
 
 
@@ -67,10 +67,17 @@ $(document).ready(function () {
   $('form.new-tweet').on("submit", function (event) {
     const formData = $(this).serialize();
     event.preventDefault();
+
+    // hide error when form is submitted
+    $('.error-container').slideUp();
+
     if ($('.counter').val() < 0) {
-      alert('Tweet is too long!')
+      // Display the error message using jQuery
+      $('.error-message').text('Tweet is too long!');
+      $('.error-container').slideDown();
     } else if (formData === "text=") {
-      alert('Tweet is empty!')
+      $('.error-message').text('Tweet is empty!');
+      $('.error-container').slideDown();
     }
     // Post the tweet
     $.ajax({
