@@ -26,7 +26,7 @@ $(document).ready(function () {
   const renderTweets = function (tweets) {
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $('#tweets-container').append($tweet);
+      $('#tweets-container').prepend($tweet);
     }
   }
 
@@ -79,9 +79,10 @@ $(document).ready(function () {
       data: formData
     })
       .done(function () {
-        // If the tweet is successfully posted, reload the tweets
+        // If the tweet is successfully posted, empty and reload the tweets
+        $('#tweet-text').val('');
+        $('.counter').val(140);
         loadTweets();
       })
-  })
-
+  });
 });
