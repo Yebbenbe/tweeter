@@ -2,17 +2,17 @@
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
- }
+}
 
- button.new-tweet {
+button.new-tweet {
   background-color: #2f4baa;
   border: #1e45c5;
   color: #f4f1ec;
   font-family: 'bungee';
   padding: 5px;
- }
+}
 
- textarea.new-tweet {
+textarea.new-tweet {
   background-color: #f4f1ec;
   border: none;
   border-bottom: solid 5px black;
@@ -21,20 +21,20 @@
   font-weight: 300;
   font-size: large;
   resize: none;
- }
+}
 
- .counter {
+.counter {
   font-family: 'bungee';
   color: black;
- }
+}
 
- label.new-tweet {
+label.new-tweet {
   color: #545149;
   font-size: large;
   font-weight: 600;
- }
+}
 
- .error-container {
+.error-container {
   background-color: #ffcccc;
   border: 1px solid #ff0000;
   padding: 10px;
@@ -43,6 +43,6 @@
 }
 
 .error-message {
-  color: #ff0000; /* text */
+  color: #ff0000;
   font-weight: bold;
 }

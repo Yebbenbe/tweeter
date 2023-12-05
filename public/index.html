@@ -4,6 +4,8 @@
 <head>
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
 
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -26,13 +28,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
 
-   <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
 </head>
 
 <body>
@@ -49,9 +54,9 @@
 
   <header class="userheader">
 
-      <img src="/images/profile-hex.png">
+    <img src="/images/profile-hex.png">
 
-      <h2>Your Name</h2>
+    <h2>Your Name</h2>
 
   </header>
 
@@ -59,7 +64,7 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
 
-    <section>
+    <section class="new-tweet">
       <h2>Compose Tweet</h2>
       <form action="/tweets/" method="POST" class="new-tweet" id="target">
         <label for="tweet-text" class="new-tweet">What are you humming about?</label>
@@ -69,12 +74,13 @@
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
+      <!-- error message, hidden when loaded-->
       <div class="error-container" style="display: none;">
         <p class="error-message"></p>
       </div>
     </section>
 
-
+    <!-- Empty container for generated tweets -->
     <section id="tweets-container">
 
     </section>

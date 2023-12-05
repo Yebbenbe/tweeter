@@ -51,9 +51,9 @@ $(document).ready(function () {
         <footer>
           <div class="timestamp">${timeago.format(createdAt)}</div>
           <div class="actions">
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-repeat"></i>
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid tweet-icons fa-flag"></i>
+            <i class="fa-solid tweet-icons fa-repeat"></i>
+            <i class="fa-solid tweet-icons fa-heart"></i>
           </div>
         </footer>
       </article>
@@ -73,10 +73,10 @@ $(document).ready(function () {
 
     if ($('.counter').val() < 0) {
       // Display the error message using jQuery
-      $('.error-message').text('Tweet is too long!');
+      $('.error-message').text('Tweet is too long! ( ͡~ ͜ʖ ͡°)');
       $('.error-container').slideDown();
     } else if (formData === "text=") {
-      $('.error-message').text('Tweet is empty!');
+      $('.error-message').text('Tweet is empty!  (つ◉益◉)つ');
       $('.error-container').slideDown();
     }
     // Post the tweet

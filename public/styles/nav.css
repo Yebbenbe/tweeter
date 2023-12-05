@@ -1,28 +1,37 @@
 nav {
-    background-color: #4056A1;
-    color: #FFFFFF;
-    height: 120px;
-    width: 100%;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  height: 120px;
+  width: 100%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 
 }
 
-nav>span{
+nav>span {
   margin-top: 37px;
   font-family: "Bungee", sans-serif;
   font-size: 50px;
 }
 
-nav>div{
+nav>div {
   text-align: right;
 }
 
-.arrow{
+.arrow {
   color: red;
   text-align: center;
+}
+
+
+@media only screen and (max-width:1023px) {
+  nav {
+    background-color: transparent;
+    position: absolute;
+    display: none;
+  }
 }
