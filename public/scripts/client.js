@@ -98,6 +98,9 @@ $(document).ready(function () {
         $('.counter').val(140);
         loadTweets();
       })
+      .fail(function (xhr, status, error) {
+        console.error('AJAX request failed:', status, error);
+      })
   });
   loadTweets();
 });
