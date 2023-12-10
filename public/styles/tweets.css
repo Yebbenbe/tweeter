@@ -1,6 +1,6 @@
 /*main container */
 
-#tweets-container:hover {
+article.tweet:hover {
   box-shadow: 8px 5px 5px #cfd3e9;
 }
 

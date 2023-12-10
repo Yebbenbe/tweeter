@@ -19,11 +19,17 @@ $(document).ready(function () {
       .then(function (tweets) {
         console.log('Success: ', tweets);
         renderTweets(tweets);
-      });
+      })
+      .catch(function (error) {
+        console.error('Error loading tweets: ', error);
+      })
   }
 
   // Render Tweets
   const renderTweets = function (tweets) {
+    // clear tweet container
+    $('#tweets-container').empty();
+    // render tweets
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $('#tweets-container').prepend($tweet);
@@ -75,11 +81,12 @@ $(document).ready(function () {
       // Display the error message using jQuery
       $('.error-message').text('Tweet is too long! ( ͡~ ͜ʖ ͡°)');
       $('.error-container').slideDown();
+      return;
     } else if (formData === "text=") {
       $('.error-message').text('Tweet is empty!  (つ◉益◉)つ');
       $('.error-container').slideDown();
+      return;
     }
-    // Post the tweet
     $.ajax({
       url: '/tweets/',
       method: 'POST',
@@ -92,4 +99,5 @@ $(document).ready(function () {
         loadTweets();
       })
   });
+  loadTweets();
 });

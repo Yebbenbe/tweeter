@@ -1,3 +1,12 @@
+button.new-tweet:hover {
+  box-shadow: 8px 5px 5px #cfd3e9;
+}
+
+button.new-tweet:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+}
+
 .buttoncounter {
   display: flex;
   justify-content: space-between;
