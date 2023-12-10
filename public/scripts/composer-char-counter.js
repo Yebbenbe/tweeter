@@ -13,6 +13,8 @@ $(document).ready(function() {
     // if the remaining characters is less than 0, the counter turns red
     if (charsLeft < 0) {
       $('.counter').css("color", "red");
+    } else {
+      counter.css("color", "black");
     }
 
 
